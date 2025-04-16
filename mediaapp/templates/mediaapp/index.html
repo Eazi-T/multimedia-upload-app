@@ -1,0 +1,15 @@
+<h1>Uploaded Media</h1>
+<a href="{% url 'upload' %}">Upload New</a>
+<ul>
+  {% for file in files %}
+    <li>{{ file.title }} - {{ file.media_type }} <br>
+      {% if file.media_type == 'image' %}
+        <img src="{{ file.file.url }}" width="200">
+      {% elif file.media_type == 'audio' %}
+        <audio controls><source src="{{ file.file.url }}"></audio>
+      {% elif file.media_type == 'video' %}
+        <video width="320" height="240" controls><source src="{{ file.file.url }}"></video>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
