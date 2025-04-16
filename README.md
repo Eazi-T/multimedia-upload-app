@@ -6,8 +6,8 @@ This project is a simple Django-based web application that allows users to uploa
 
 ## 📁 Project Structure
 
-- `myproject/`
-  - `myapp/`  
+- `multimedia_site/`
+  - `mediaapp/`  
     - `migrations/`
     - `models.py`
     - `views.py`
@@ -27,7 +27,7 @@ This project is a simple Django-based web application that allows users to uploa
 
 ## 🚀 How to Run the Project
 
-1. Unzip the project folder into your desired working directory.
+1. Clone the project
 
 2. Open a terminal or command prompt and navigate to the project folder:
    ```bash
